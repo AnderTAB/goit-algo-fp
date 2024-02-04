@@ -15,10 +15,10 @@ for _ in range(nums):
 probabilities = {key: count / nums for key, count in counts.items()}
 
 if __name__ == "__main__":
-    print("Dice | Probability")
-    print("-----|------------")
+    print("Комбінація | Ймовірність")
+    print("-----------|------------")
     for dice, prob in sorted(probabilities.items()):
-        print(f"{dice} | {prob:.2%}")
+        print(f"         {dice} | {prob:.2%}")
 
 
     plt.bar(probabilities.keys(), probabilities.values())  # noqa
